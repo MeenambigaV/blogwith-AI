@@ -1,0 +1,17 @@
+<!-- blog.html -->
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Generated Blog</title>
+</head>
+<body>
+<h1 th:text="${blog.title}">Blog Title</h1>
+<p th:text="${blog.content}">Blog Content</p>
+<h2>Quiz</h2>
+<p th:text="${blog.quizQuestion}">Quiz Question</p>
+<form>
+    <input type="text" id="quizAnswer" />
+    <button type="submit">Submit</button>
+</form>
+</body>
+</html>

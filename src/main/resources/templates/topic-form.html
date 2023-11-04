@@ -1,0 +1,14 @@
+<!-- topic-form.html -->
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Topic Form</title>
+</head>
+<body>
+<form action="#" th:action="@{/generate-blog}" th:object="${topic}" method="post">
+    <label for="topicName">Topic:</label>
+    <input type="text" id="topicName" th:field="*{topicName}" />
+    <button type="submit">Generate Blog</button>
+</form>
+</body>
+</html>
